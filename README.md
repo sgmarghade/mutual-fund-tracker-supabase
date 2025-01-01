@@ -16,6 +16,20 @@ A web application to track and manage your mutual fund investments. Built with R
 - Edit buying details (average buying NAV, total units, last buying NAV)
 - Responsive design with Tailwind CSS
 
+## Screenshots
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Search and Add Funds
+![Search Funds](screenshots/search.png)
+
+### Portfolio View Card
+![Portfolio](screenshots/portfolio-card.png)
+
+### Portfolio View Table
+![Portfolio](screenshots/portfolio-table.png)
+
 ## Tech Stack
 
 - Frontend:
