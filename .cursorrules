@@ -1,0 +1,5 @@
+# Codebase OverviewThis codebase appears to be part of a web application built using TypeScript, React, and Tailwind CSS. 
+## It is structured to support a LoginPage, SignupPage, authentication flows, and a profile page for logged-in users. 
+## The application integrates with Supabase for backend services, including authentication and database interactions. 
+## All the hooks are in the src/hooks folder. All Components are in the src/components folder. 
+## All supabase migrations are in the supabase/migrations folder. This application is a mutual fund tracker and all mutual funds API are in lib/api.ts. 

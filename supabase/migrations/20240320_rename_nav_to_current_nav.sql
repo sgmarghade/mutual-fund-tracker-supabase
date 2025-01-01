@@ -1,0 +1,1 @@
+alter table mutual_funds rename column nav to current_nav; 
