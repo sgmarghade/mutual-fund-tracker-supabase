@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { RefreshCw, Loader2 } from 'lucide-react';
+import { RefreshCw } from 'lucide-react';
+import { LoadingButton } from './common/LoadingButton';
 
 interface RefreshButtonProps {
   onRefresh: () => Promise<void>;
@@ -19,18 +20,14 @@ export function RefreshButton({ onRefresh, className = '' }: RefreshButtonProps)
   };
 
   return (
-    <button
+    <LoadingButton
       onClick={handleRefresh}
-      disabled={isRefreshing}
-      className={`inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 ${className}`}
+      isLoading={isRefreshing}
+      icon={<RefreshCw className="w-4 h-4" />}
+      className={className}
       aria-label="Refresh fund data"
     >
-      {isRefreshing ? (
-        <Loader2 className="w-4 h-4 animate-spin mr-2" />
-      ) : (
-        <RefreshCw className="w-4 h-4 mr-2" />
-      )}
       Refresh
-    </button>
+    </LoadingButton>
   );
 }
